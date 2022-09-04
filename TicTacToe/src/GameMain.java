@@ -153,9 +153,9 @@ public class GameMain extends JPanel implements MouseListener{
 				// TODO: check which player has won and update the currentstate to the appropriate gamestate for the winner
 				//++ this is to check if player cross won, else player nought won
 				if(thePlayer == Player.Cross)
-					currentState = GameState.Playing;
-				else
 					currentState = GameState.Cross_won;
+				else
+					currentState = GameState.Nought_won;
 
 				
 			} else 
